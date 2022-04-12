@@ -1,0 +1,51 @@
+.testimonials {
+    width: 65%;
+    height: 24rem;
+    margin: 1rem auto;
+    background-color: rgba($color-white,0.9);
+    box-shadow: 0 2rem 4rem rgba($color-black,0.4);
+    padding: 5rem;
+    transform: skewX(-8deg);
+    position: relative;
+    &__shape {
+        height: 15rem;
+        width: 15rem;
+        margin-right: 3rem;
+        transform: skewX(8deg);
+        float: left;
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        height: 100%;
+        width: 15rem;
+        transition: all 0.2s;
+        transform: scale(1.2);
+    }
+
+    &__content {
+        font-size: $defalut-font-size;
+        line-height: 1.7;
+    }
+
+    &__caption {
+        @include center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+    }
+
+    &:hover &__img {
+        transform: scale(1);
+        filter: blur(3px) brightness(65%);
+    }
+}

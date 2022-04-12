@@ -1,0 +1,63 @@
+.about {
+    height: 50rem;
+
+    &__branding {
+        &__logo {
+            height: 20rem;
+            position: relative;
+            &__img {
+                @include center;
+            }
+        }
+
+        &__company-name {
+            color: $color-white;
+            font-size: 3rem;
+            font-weight: 700;
+            border: 2px solid;
+            border-radius: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    &__social-media {
+        &:not(:last-child){
+            margin: 1rem 1rem;
+
+        }
+        color: $color-white;
+        margin-top: 2.5rem;
+        display: block;
+        &__message {
+            margin-top: 2rem;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: $defalut-font-size;
+        }
+
+        &__link,
+        &__link:active,
+        &__link:visited {
+            margin: 1rem;
+            text-decoration: none;
+            color: $color-white;
+            float: right;
+        }
+    }
+    &__details{
+        padding: 4rem;
+        &__heading{
+            &--main{
+                font-size: 4rem;
+                color: $color-white;
+            }
+        }
+        &__list{
+            &__items{
+                color: $color-white;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.slide{
+    background-color: white;
+    padding: 1rem;
+}
+
+
+.feature{
+    background-color: $color-secondary;
+    padding: 3rem;
+    font-size: 2rem;
+    color: $color-white;
+}
+.testimonial{
+    background-image: linear-gradient(to right bottom, rgba($color-secondary,0.8),rgba($color-primary,1)),
+    url(images/others/background-for-testimonials.jpg);
+    padding: 5rem;
+}
+
+.about{
+    background-color: $color-gray-dark-1;
+    padding: 4rem;
+}
+
+.footer{
+    background-color: $color-primary;
+}

@@ -1,0 +1,21 @@
+.footer{
+    &__back-to-top{
+        padding: 1rem;
+        background-color: $color-secondary;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        &__logo{
+            color: $color-black;
+           text-decoration: none;
+        }
+    }
+    &__copyright{
+    padding: 1.5rem;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    }
+}

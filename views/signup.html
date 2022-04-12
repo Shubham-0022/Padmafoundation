@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Signup</title>
+</head>
+
+<body>
+
+    <section class="signup">
+        <div class="row">
+            <div class="signup__heading">Sign up</div>
+        </div>
+        <div class="row">
+            <div class="signup__form">
+                <div class="col-1-of-2">
+                    <img src="/images/others/signup-image.png" alt="" class="signup__form__image">
+                </div>
+                <div class="col-1-of-2">
+                    <fieldset>
+                        <legend class="signup__form__details__heading">Sign Up:</legend>
+                        <div class="signup__form__details">
+                            <div class="signup__form__details__container">
+                                <form action="">
+                                    <div class="signup__form__group">
+                                        <input type="text" class="signup__form__details__container__inputs" id="fname"
+                                            placeholder="Full Name">
+                                        <label for="fname" class="signup__form__details__container__label">Full
+                                            Name</label>
+                                    </div>
+                                    <div class="signup__form__group">
+                                        <input type="email" class="signup__form__details__container__inputs" id="email"
+                                            placeholder="Email (if available)" autocomplete="flase">
+                                        <label for="email" class="signup__form__details__container__label">Email</label>
+                                    </div>
+                                    <div class="signup__form__group">
+                                        <input type="telno" class="signup__form__details__container__inputs" id="phone"
+                                            placeholder="Contact (Will be your user I'd)" minlength="10" maxlength="14"
+                                            pattern="[1-9]{1}[0-9]{9}" title="Invalid Phone Number">
+                                        <label for="phone" class="signup__form__details__container__label">Contact
+                                            no.</label>
+                                    </div>
+
+                                    <div class="signup__form__group u-margin-bottom-medium">
+                                        <div class="signup__form__radio-group">
+                                            <input type="radio" class="signup__form__radio-input" id="male"
+                                                name="gender">
+                                            <label for="male" class="signup__form__radio-label">
+                                                <span class="signup__form__radio-button"></span>
+                                                Male</label>
+                                        </div>
+                                        <div class="signup__form__radio-group">
+                                            <input type="radio" class="signup__form__radio-input" id="female"
+                                                name="gender">
+                                            <label for="female" class="signup__form__radio-label">
+                                                <span class="signup__form__radio-button"></span>
+                                                Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="signup__form__group u-margin-bottom-medium">
+                                        <label for="cars">Blood Group:</label>
+
+                                        <select id="cars" class="signup__form__blood-group">
+                                            <option value="O+">O+</option>
+                                            <option value="A+">A+</option>
+                                            <option value="B+">B+</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B-">B-</option>
+                                            <option value="AB-">AB-</option>
+                                            <option value="O-">O-</option>
+                                            <option value="NULL" selected>Choose</option>
+                                        </select>
+                                    </div>
+
+
+                                    <button type="submit" class="btn btn--white">Signup</button>
+                                </form>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

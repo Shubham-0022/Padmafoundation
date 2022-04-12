@@ -1,0 +1,159 @@
+fieldset {
+    background-color: $color-primary-light;
+    padding: 3rem;
+    border-radius: 2.5rem;
+}
+
+legend {
+    background-color: $color-primary;
+    color: rgb(13, 226, 77);
+    border-radius: 1.5rem;
+    padding: 5px 10px;
+}
+
+.signup {
+    font-size: $defalut-font-size;
+    color: $color-white;
+
+    &__heading {
+        background-color: $color-primary;
+        text-transform: uppercase;
+        font-size: 2.7rem;
+        font-weight: 700;
+        color: $color-white;
+        padding: 2rem;
+    }
+
+    &__form {
+        padding: 10rem;
+        margin: 7rem;
+        height: 100rem;
+        background-color: $color-secondary;
+
+        &__group:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        &__image {
+            width: 100%;
+            border-radius: 1rem;
+            // padding-bottom: 3rem;
+        }
+
+        &__details {
+            &__heading {
+                margin-bottom: 3rem;
+                font-size: 5rem;
+                font-weight: 600;
+                color: $color-white;
+            }
+
+            &__container {
+                &__label {
+                    color: $color-white;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin-left: 2rem;
+                    margin-top: 0.7rem;
+                    margin-bottom: 0.7rem;
+                    display: block;
+                    transform: translateY(0);
+                    transition: all 0.3s;
+                    opacity: 1;
+
+                    &__show {
+                        color: $color-white;
+                    }
+                }
+
+                &__inputs,
+                &__inputs:focus {
+                    outline: none;
+                    width: 90%;
+                    display: block;
+                    border: none;
+                    padding: 1.5rem 2rem;
+                    border-radius: 1rem;
+                    background-color: $color-background;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+                        border-bottom: 3px solid $color-primary;
+                    }
+
+                    &:focus:invalid {
+                        border-bottom: 3px solid red;
+                    }
+
+                    &:focus:valid {
+                        border-bottom: 3px solid rgb(12, 236, 68);
+                    }
+
+                }
+
+                &__inputs:placeholder-shown+&__label {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-2rem);
+                }
+
+            }
+        }
+
+        &__radio-group {
+            width: 25%;
+            display: inline-block;
+        }
+
+        &__radio-label {
+            font-size: $defalut-font-size;
+            color: $color-primary;
+            cursor: pointer;
+            padding-left: 4.5rem;
+            position: relative;
+        }
+
+        &__radio-input {
+            display: none;
+        }
+
+        &__radio-button {
+
+            height: 3rem;
+            width: 3rem;
+            border: 5px solid $color-primary;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 1rem;
+            top: -0.2rem;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 1.3rem;
+                width: 1.3rem;
+                border-radius: 50%;
+                @include center;
+                background-color: $color-primary;
+                opacity: 0;
+                transition: all 0.2s;
+            }
+        }
+
+        &__radio-input:checked~&__radio-label &__radio-button::after {
+            opacity: 1;
+        }
+        &__blood-group{
+            color: $color-white;
+            padding: .2rem 1rem;
+            width: 9rem;
+            height: 3rem;
+            border-radius: 2rem;
+            outline: none;
+            border: 3px solid $color-primary;
+            background-color: $color-secondary;
+        }
+    }
+}

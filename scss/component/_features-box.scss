@@ -1,0 +1,48 @@
+.features {
+    &__heading {
+        text-align: center;
+        font-family: $font-family-thick;
+        font-weight: 900;
+    }
+
+    &__box {
+        background-color: $color-gray-light-1;
+        border-radius: 3px;
+        box-shadow: 0 2rem 3rem rgba($color-black, 0.3);
+        margin: 1.5rem;
+        transition: all 0.2s;
+
+        &__img {
+            position: relative;
+            height: 10rem;
+
+            &__logo {
+                margin-top: 2rem;
+                @include center;
+            }
+        }
+
+        &__container {
+            padding: 4rem;
+            color: $color-gray-dark-2;
+
+            &__heading {
+                text-align: center;
+                font-family: $font-family-secondary;
+                border-bottom: 1px solid $color-gray-dark-2;
+            }
+
+            &__para {
+                font-family: $font-family-regular;
+                font-size: $defalut-font-size;
+                columns: 1;
+                hyphens: auto;
+            }
+        }
+    }
+
+    &__box:hover {
+        transform: translateY(-1.5rem) scale(1.09);
+        box-shadow: 0 1rem 4rem rgba($color-black, 0.2);
+    }
+}
